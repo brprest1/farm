@@ -1,7 +1,7 @@
 /* --------------------CSS by Baylee Preston -------------------- */
 
 /* ---------------------- IMPORTED FONTS -----------------------  */
-@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 
 /* ------------------------- CSS RESET -------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -63,7 +63,37 @@ table {
 
 /* ------------- GLOBAL STYLES (mobile first/small) ------------- */
 @media screen and (min-width: 428px) {
+    body {
+        font-family: "Habibi";
+    }
 
+    h1, h2, h3 {
+        font-family: "Irish Grover";
+    }
+
+	h1 {
+		font-size: 2.5em;
+		text-shadow: 2px 1px 3px var(--black);
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3, p {
+		font-size: 1.25em;
+		padding: 20px;
+	}
+
+	#top {
+		background-color: var(--green);
+		color: var(--white);
+		text-align: center;
+	}
+
+	#top p {
+		font-style: italic;
+	}
 }
 
 /* -------------------- MEDIA QUERY (medium) -------------------- */
@@ -78,5 +108,5 @@ table {
 
 /* ---------------------- MEDIA QUERY (xl) ---------------------- */
 @media screen and (min-width: 1440px) {
-    
+
 }
