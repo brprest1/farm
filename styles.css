@@ -123,6 +123,7 @@ nav li {
 	padding: 10px;
 	border-radius: 4px;
 	outline: 2px solid var(--white);
+	z-index: 2;
 }
 
 a:link, a:visited {
@@ -143,7 +144,6 @@ a:hover {
 	height: 30px;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
 }
 
 h3 {
@@ -228,10 +228,54 @@ footer div {
 
 /* -------------------- MEDIA QUERY (large) --------------------- */
 @media screen and (min-width: 1280px) {
+	header {
+		display: block;
+		float: left;
+		width: 100%;
+		z-index: 1;
+		margin-bottom: 40px;
+	}
 
+	header p {
+		text-align: left;
+	}
+
+	nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	nav li {
+		margin: 0;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.for-sale {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	footer {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#hours {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 /* ---------------------- MEDIA QUERY (xl) ---------------------- */
 @media screen and (min-width: 1440px) {
-
+	.for-sale {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
