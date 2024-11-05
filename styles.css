@@ -80,9 +80,20 @@ table {
 		font-size: 1.75em;
 	}
 
-	h3, p {
+	h2, h3, p, li {
+		margin: 10px;
+	}
+
+	h2, h3 {
+		margin-top: 30px;
+	}
+
+	h3, li {
 		font-size: 1.25em;
-		padding: 20px;
+	}
+
+	p {
+		line-height: 1.5;
 	}
 
 	#top {
@@ -93,7 +104,47 @@ table {
 
 	#top p {
 		font-style: italic;
+		padding-bottom: 15px;
 	}
+
+	nav {
+		margin: 40px;
+	}
+
+	nav h2 {
+		display: none;
+	}
+
+	nav li {
+		background-color: var(--orange);
+		max-width: 75%;
+		text-align: center;
+		margin: 20px auto auto auto;
+		padding: 10px;
+		border-radius: 4px;
+	}
+
+	a:link, a:visited {
+		color: var(--white);
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	#top-button {
+		display: flex;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 30px;
+		height: 30px;
+		justify-content: center;
+		align-items: center;
+		outline: 2px solid var(--white);
+	}
+
 }
 
 /* -------------------- MEDIA QUERY (medium) -------------------- */
