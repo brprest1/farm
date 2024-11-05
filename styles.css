@@ -96,13 +96,13 @@ p {
 	line-height: 1.5;
 }
 
-#top {
+header {
 	background-color: var(--green);
 	color: var(--white);
 	text-align: center;
 }
 
-#top p {
+header p {
 	font-style: italic;
 	padding-bottom: 15px;
 }
@@ -166,6 +166,22 @@ figcaption {
 	color: var(--white);
 	text-align: center;
 	top: 42%;
+}
+
+footer {
+	background-color: var(--green);
+	color: var(--white);
+	text-align: center;
+}
+
+footer h2 {
+	padding-top: 30px;
+}
+
+footer div {
+	background-color: var(--white);
+	color: var(--green);
+	padding: 10px;
 }
 
 /* -------------------- MEDIA QUERY (medium) -------------------- */
